@@ -1,4 +1,42 @@
+/* =========================================
+   DESIGN TOKENS (Premium Dark Mode)
+   ========================================= */
+:root {
+  /* Core Colors */
+  --bg-primary: #0f172a; /* Deep slate */
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  
+  /* Text Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-accent: #38bdf8; /* Vibrant light blue */
+  
+  /* Accent Colors (Neon/Vibrant) */
+  --accent-primary: #0ea5e9;
+  --accent-secondary: #8b5cf6; /* Purple */
+  --accent-gradient: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  --accent-glow: 0 0 20px rgba(14, 165, 233, 0.4);
+  
+  /* UI Elements */
+  --border-color: rgba(255, 255, 255, 0.1);
+  --error-message: #ef4444;
 
+  /* Glassmorphism */
+  --glass-bg: rgba(30, 41, 59, 0.6);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  --glass-blur: blur(12px);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+}
+
+/* =========================================
+   FONTS
+   ========================================= */
 @font-face {
   font-family: "Poppins Medium";
   font-style: normal;
@@ -48,47 +86,80 @@
   src: url("./assets/fonts/Poppins-Thin.ttf");
 }
 
+/* =========================================
+   BASE STYLES
+   ========================================= */
 * {
   outline: none;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   overflow-y: overlay;
-  font-family: "Poppins Regular";
+  font-family: "Poppins Regular", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+/* Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px !important;
-  height: 6px !important;
-}
-
-body ::-webkit-scrollbar-thumb {
-  background-color: hsla(0, 0%, 100%, 0.16);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2);
+  width: 8px !important;
+  height: 8px !important;
 }
 
 ::-webkit-scrollbar-track {
-  background: hsla(0, 0%, 100%, 0.1);
+  background: var(--bg-primary);
 }
 
+::-webkit-scrollbar-thumb {
+  background-color: var(--bg-tertiary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent-primary);
+}
+
+/* =========================================
+   UTILITIES
+   ========================================= */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 16px;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
 .btn {
   border-radius: 50px;
-  padding: 14px 0;
-  width: 160px;
+  padding: 12px 32px;
+  width: auto;
+  min-width: 160px;
   cursor: pointer;
-  transition: 0.2s;
-  font-family: "Poppins SemiBold";
+  transition: all var(--transition-normal);
+  font-family: "Poppins SemiBold", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
 
 .btn:active {
@@ -96,36 +167,35 @@ body ::-webkit-scrollbar-thumb {
 }
 
 .primary-btn {
-  color: var(--white);
-  border: 2px solid linen;
-  font-size: 12px;
-  background-color: #1f2235;
+  color: var(--text-primary);
+  background: transparent;
+  border: 2px solid var(--accent-primary);
 }
-/* @media only screen and (max-width: 414px) {
-  .primary-btn {
-    font-size: 13px;
-  }
-} */
 
 .primary-btn:hover {
-  color: aliceblue;
-  border: 2px solid #182E7A;
-  background-color: #304269;
+  background: var(--accent-primary);
+  box-shadow: var(--accent-glow);
+  color: var(--bg-primary);
 }
 
 .highlighted-btn {
-  color: var(--white);
-  font-size: 12px;
-  border: 2px solid white;
-  background-color: #304269;
+  color: #fff;
+  background: var(--accent-gradient);
+  border: none;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
 }
+
+.highlighted-btn:hover {
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.6);
+  transform: translateY(-2px);
+}
+
 @media only screen and (max-width: 568px) {
   .highlighted-btn {
-    z-index: -900;
+    z-index: 1; /* Fixed negative z-index issue */
   }
 }
 
 .red-border {
   border: 1px solid var(--error-message) !important;
 }
-

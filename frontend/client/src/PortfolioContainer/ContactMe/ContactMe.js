@@ -12,6 +12,9 @@ export default function ContactMe(props) {
         <div className="col">
           <h2 className="title">
           </h2>{" "}
+          <a href="mailto:jorgegarciaotero@gmail.com">
+            <i className="fa fa-envelope"></i>
+          </a>
           <a href="https://www.facebook.com/jorge.garciaotero.3/">
                 <i className="fa fa-facebook-square"></i>
               </a>

@@ -7,7 +7,6 @@ import "./Resume.css";
 const Resume = (props) => {
   /* STATES */
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
-  const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({});
 
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
@@ -52,123 +51,109 @@ const Resume = (props) => {
   ];
 
   const programmingSkillsDetails = [
-    { skill: "JavaScript", ratingPercentage: 85 },
-    { skill: "React JS", ratingPercentage: 45 },
-    { skill: "HTML", ratingPercentage: 80 },
-    { skill: "CSS", ratingPercentage: 80 },
-    { skill: "Python", ratingPercentage: 85 },
-    { skill: "MySQL", ratingPercentage: 89 },
-    { skill: "MongoDB", ratingPercentage: 70 },
-    { skill: "HiveQL", ratingPercentage: 80 },
-    { skill: "Apache Nifi", ratingPercentage: 70 },
-    { skill: "Apache Airflow", ratingPercentage: 60 },
-    { skill: "Power BI", ratingPercentage: 80 },
-    { skill: "Google Cloud Platform", ratingPercentage: 60 },
+    { skill: "Python (PySpark, Pandas, Flask)", ratingPercentage: 85 },
+    { skill: "SQL & Databases (MySQL, Hive, Delta Lake)", ratingPercentage: 85 },
+    { skill: "Azure (Databricks, Data Factory, DevOps)", ratingPercentage: 80 },
+    { skill: "Power BI & Superset", ratingPercentage: 85 },
+    { skill: "Apache NiFi & Airflow", ratingPercentage: 70 },
+    { skill: "JavaScript, HTML, CSS", ratingPercentage: 75 },
+    { skill: "Google Cloud Platform", ratingPercentage: 65 },
+    { skill: "Power Automate & Selenium", ratingPercentage: 75 },
   ];
 
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"Launchpad AI (DataScience)"}
-        subHeading={"12 week Machine Learning Training course (320h)."}
-        fromDate={"2020"}
-        toDate={"2019"}
+        heading={"Universidad Internacional de La Rioja (UNIR)"}
+        subHeading={"Master in Artificial Intelligence"}
+        fromDate={"2024"}
+        toDate={"2025"}
       />
-
       <ResumeHeading
         heading={"Escuela de Organización Industrial (EOI)"}
-        subHeading={"Master Degree in Big Data and Bussiness Intelligence"}
-        fromDate={"2018"}
-        toDate={"2019"}
+        subHeading={"Master Degree in Big Data and Business Intelligence"}
+        fromDate={"2017"}
+        toDate={"2018"}
       />
       <ResumeHeading
         heading={"University of Vigo (UVIGO)"}
-        subHeading={"Telecommunications Engineering. Specialization in Electronics"}
+        subHeading={"Master's Degree in Telecommunications Engineering"}
         fromDate={"2004"}
-        toDate={"2012"}
+        toDate={"2013"}
       />
     </div>,
 
     /* WORK EXPERIENCE */
+    /* WORK EXPERIENCE */
     <div className="resume-screen-container" key="current-role">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Vodafone"}
-          subHeading={"Data Engineering and Development"}
-          fromDate={"2019"}
+          heading={"Reale Group"}
+          subHeading={"Data Engineer"}
+          fromDate={"Oct 2024"}
           toDate={"Present"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            <span>&#8226;</span> <b> Automated data ingestion and transformation</b> from diverse sources including statistics, alarms, network inventory files, SharePoint files, and ticketing system data (Amdocs) to facilitate analysis and visualization.
+            <span>&#8226;</span> Designed and implemented data pipelines in <b>Azure Databricks</b> and <b>Azure Data Factory</b>, following the Medallion architecture on <b>Delta Lake</b>.
           </span>
           <br />
           <span className="resume-description-text">
-            <span>&#8226;</span> <b> Enhanced Amdocs Ticket Management:</b> Developed code to automate ticket creation, update, and closure based on network alarms and scheduled work notification emails. This reduces manual intervention and improves efficiency.
+            <span>&#8226;</span> Developed ingestion and transformation processes using <b>PySpark and SQL</b>, integrating data governance via Unity Catalog.
           </span>
           <br />
           <span className="resume-description-text">
-            <span>&#8226;</span> <b> Developed interactive dashboards</b> using Microsoft Power BI formonitor KPIs for various VNO Spain contracts.
+            <span>&#8226;</span> Integrated data from Oracle, Microsoft Dataverse, and REST APIs (Medallia, Genesys Cloud), including web scraping with Python Selenium.
           </span>
           <br />
           <span className="resume-description-text">
-            <span>&#8226;</span> Fully developed the web portals  https://fotodered.vodafone.es/ and  https://vision.vodafone.es/
+            <span>&#8226;</span> CI/CD environment management with <b>Azure DevOps</b> for code deployment and version control.
           </span>
-          <br />
-          <br />
-          <span className="resume-description-text">
-             <i>Tech Stack: HDFS, MySQL, Python(Flask), Javascript, HMTL, CSS, Bash, Apache NIFI, Superset, Stackstorm, Alerta, Microsoft PowerApps, GIT/Github. </i>
-          </span>
-          <br />
-          <br />
         </div>
       </div>
     </div>,
 
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
+        <ResumeHeading
+          heading={"Vodafone"}
+          subHeading={"Data Engineer"}
+          fromDate={"2019"}
+          toDate={"2024"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">
+            <span>&#8226;</span> Administered an on-premise Big Data cluster (Hortonworks), managing massive network data storage.
+            <br />
+            <span>&#8226;</span> Implemented data pipelines in <b>Apache NiFi</b> and processed data with <b>PySpark/Pandas</b> to generate automated reports and incident tickets.
+            <br />
+            <span>&#8226;</span> Supervised the <b>Power BI</b> portal for network monitoring and SLA compliance.
+          </span>
+        </div>
 
         <ResumeHeading
           heading={"Vodafone"}
-          subHeading={"Specialist in Suppliers and Partners Management"}
+          subHeading={"Data Analyst"}
           fromDate={"2015"}
           toDate={"2019"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            <span>&#8226;</span> Partners and Suppliers Contract Management: Managed contractual agreements with Orange (Mobile and Fixed Sharing Services) and Cellnex (Mobile Infrastructure Cession).
+            <span>&#8226;</span> Automated Service Level Agreements (SLAs) and Key Performance Indicators (KPIs) through VBA and SQL.
             <br />
-            <span>&#8226;</span> SLA/KPI Automation: Automated Service Level Agreements (SLAs) and Key Performance Indicators (KPIs) using Visual Basic for Applications (VBA).
-            <br />
-            <span>&#8226;</span> Interactive KPI/SLA Dashboards: Developed interactive dashboards for KPIs and SLAs using  MySQL and Microsoft Power BI.
+            <span>&#8226;</span> Monitored and analyzed network operations and supplier contracts (Orange, Cellnex, Huawei).
           </span>
         </div>
 
-        <br />
         <ResumeHeading
-          heading={"Satec"}
-          subHeading={"Network Technician"}
+          heading={"Experis / Satec"}
+          subHeading={"Network Deployment & Operations Technician"}
           fromDate={"2013"}
           toDate={"2015"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-             Managed the installation of equipment, wiring, and electrical connections in Vodafone Network Switching Centers .
-             Analyzed and resolved incidents within the Vodafone Mobile Network.
-            <br />
-          </span>
-        </div>
-
-        <br />
-        <ResumeHeading
-          heading={"Gradiant"}
-          subHeading={"C# Developer (Trainee)"}
-          fromDate={"2012"}
-          toDate={"2013"}
-        />
-        <div className="experience-description">
-          <span className="resume-description-text">
-            Developed a telemedicine application using C++/C# to assist elderly people in performing physical exercises using Microsoft's Kinect Sensor device. The application performed joint detection and real-time recognition of pre-recorded movement patterns.
+            <span>&#8226;</span> Managed equipment deployment across Vodafone Network Centers and resolved mobile network incidents.
           </span>
         </div>
       </div>
@@ -220,13 +205,6 @@ const Resume = (props) => {
   ];
 
   const handleCarousal = (index) => {
-    let offsetHeight = 500;
-
-    let newCarousalOffset = {
-      style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
-    };
-
-    setCarousalOffsetStyle(newCarousalOffset);
     setSelectedBulletIndex(index);
   };
 
@@ -251,11 +229,8 @@ const Resume = (props) => {
 
   const getResumeScreens = () => {
     return (
-      <div
-        style={carousalOffsetStyle.style}
-        className="resume-details-carousal"
-      >
-        {resumeDetails.map((ResumeDetail) => ResumeDetail)}
+      <div className="resume-details-active-tab" key={selectedBulletIndex}>
+        {resumeDetails[selectedBulletIndex]}
       </div>
     );
   };

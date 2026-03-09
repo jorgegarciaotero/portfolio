@@ -14,17 +14,17 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--bg-primary, #0f172a);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--text-primary, white);
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--accent-primary, #0ea5e9);
 }
 
 @keyframes App-logo-spin {
@@ -36,25 +36,24 @@
   }
 }
 
-:root{
-  --light-blue : #04C3FF;
-  --light-blue-shadow:  rgb(69 211 255 / 27%);
-  --sea-green: #0ABEAD;
-  --sea-green-dark: #0CBFAE;
-  --sea-green-extra-dark: #09BEAD;
-  --sea-green-shadow: rgba(11, 190, 173,0.4);
-  --header-hamburger-background : rgba(11, 190, 173,0.8);
-  --orange: #F57F17;
-  --dark-orange: #FF5823;
-  --orange-shadow: rgba(245, 127, 23,0.2);
-  --white: #ffffff;
-  --black: #333333;
-  --disabled-btn: #09bead7a;
-  --error-message:  #e44f4fd1;
-  --toast-error: #e44f4ffa;
-  --toast-shadow:  #9c9c9ce3;
-  --toast-success: #0CBFAE;
-  --loader-color: #0CBFAE
+:root {
+  /* Legacy Variables Mapped to New Theme where applicable */
+  --light-blue : var(--accent-primary);
+  --light-blue-shadow:  rgba(14, 165, 233, 0.3);
+  --sea-green: #38bdf8;
+  --sea-green-dark: #0284c7;
+  --sea-green-extra-dark: #0369a1;
+  --sea-green-shadow: rgba(56, 189, 248, 0.4);
+  --header-hamburger-background : rgba(15, 23, 42, 0.9);
+  --orange: #8b5cf6; /* Mapped to purple accent */
+  --dark-orange: #7c3aed;
+  --orange-shadow: rgba(139, 92, 246, 0.2);
+  --white: var(--text-primary);
+  --black: var(--bg-primary);
+  --disabled-btn: rgba(255, 255, 255, 0.1);
+  --error-message: var(--error-message);
+  --toast-error: #ef4444;
+  --toast-shadow: rgba(0, 0, 0, 0.5);
+  --toast-success: #10b981;
+  --loader-color: var(--accent-primary);
 }
-
-

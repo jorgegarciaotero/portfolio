@@ -14,15 +14,15 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-      "Telecommunications Engineer with 10+ years of experience in the Telco sector. Skilled in developing executive dashboards in Power BI and MySQL, automating processes with Python, and developing web applications in JavaScript and Python for network alarm and incident management. Passionate about learning and continuous development. Seeking opportunities to contribute my skills and experience to a dynamic team.",
+      "Telecommunications Engineer with Master's degrees in Big Data and Artificial Intelligence. Over 10 years of experience in the data and telecommunications sectors. I began my career in network operations and deployment, evolving towards contract management, KPI control, and report automation. In recent years, I have consolidated my role as a Data Engineer, building data ingestion and transformation pipelines (Medallion architecture) for analytical exploitation in Power BI and web platforms.",
     highlights: {
       bullets: [
-        "Full Stack web development: Python (Flask) / NodeJS / HTML & CSS / React",
-        "On Premises & Cloud: Hortonworks / Google Cloud Platform",
-        "Storage: MySQL / MongoDB / HiveQL / BigQuery",
-        "Data Visualization: PowerBI / Javascript",
-        "DataFlow Automation: Apache Nifi, Apache AirFlow",
-        "Linux"
+        "Data Engineering: Databricks, PySpark, Delta Lake, Apache NiFi, Airflow",
+        "Cloud & Orchestration: Azure (Data Factory, DevOps), Google Cloud Platform",
+        "Programming: Python (Flask, Pandas), SQL, JavaScript",
+        "Databases: MariaDB, Hive, Oracle, Microsoft Dataverse",
+        "Visualization: Power BI, Apache Superset",
+        "Automation: Power Automate, Web Scraping (Selenium)"
       ],
       heading: "Key highlights:",
     },
