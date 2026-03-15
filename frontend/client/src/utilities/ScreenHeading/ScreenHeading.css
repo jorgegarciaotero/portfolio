@@ -13,7 +13,7 @@
   }
   .screen-heading {
     font-size: 32px;
-    color: #1f2235;
+    color: var(--text-accent);
     font-family: "Poppins Bold";
   }
   .heading-seperator {

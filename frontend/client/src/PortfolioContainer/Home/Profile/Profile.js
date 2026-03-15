@@ -1,17 +1,17 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { useTypewriter } from 'react-simple-typewriter';
 import "./Profile.css";
 
 export default function Profile() {
+    const { t, i18n } = useTranslation();
+    
+    // We get the roles array directly from the translation dictionary
+    // using returnObjects: true since it's an array of strings in i18n
+    const roles = t('profile.roles', { returnObjects: true });
+
     const [typeEffect] = useTypewriter({
-        words: [
-            'Data Engineer',
-            'Python / SQL / PySpark',
-            'Azure / Databricks / Data Factory',
-            'Power BI / Superset / Power Automate',
-            'Delta Lake / Hive / MariaDB',
-            'Ingestion, Transformation & AI'
-        ],
+        words: Array.isArray(roles) ? roles : [],
         loop: true,
         typeSpeed: 80,
         deleteSpeed: 50,
@@ -44,7 +44,7 @@ export default function Profile() {
 
                     <div className="profile-details-name">
                         <span className="primary-text">
-                            Hello, I am <span className="highlighted-text">Jorge García Otero</span>
+                            {t('profile.hello')} <span className="highlighted-text">Jorge García Otero</span>
                         </span>
                     </div>
 
@@ -54,16 +54,17 @@ export default function Profile() {
                             <span style={{color: 'var(--accent-primary)'}}>|</span>
                         </h1>
                         <span className="profile-role-tagline">
-                            Telecommunications Engineer & Master in AI. Automating your data processes from ingestion to visualization.
+                            {t('profile.tagline')}
                         </span>
                     </div>
 
                     <div className="profile-options">
                         <a href="mailto:jorgegarciaotero@gmail.com">
-                            <button className="btn primary-btn">Contact Me</button>
+                            <button className="btn primary-btn">{t('profile.contactMe')}</button>
                         </a>
-                        <a href="cv_jorgegarciaotero.pdf" download="cv_jorgegarciaotero.pdf">
-                            <button className="btn highlighted-btn">Get Resume</button>
+                        <a href={i18n.language === 'en' ? "resume_jorgegarciaotero.pdf" : "cv_jorgegarciaotero.pdf"}
+                           download={i18n.language === 'en' ? "resume_jorgegarciaotero.pdf" : "cv_jorgegarciaotero.pdf"}>
+                            <button className="btn highlighted-btn">{t('profile.getResume')}</button>
                         </a>
                     </div>
                 </div>

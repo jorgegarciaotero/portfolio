@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
@@ -6,6 +7,7 @@ import "./Resume.css";
 
 const Resume = (props) => {
   /* STATES */
+  const { t } = useTranslation();
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
 
   let fadeInScreenHandler = (screen) => {
@@ -41,13 +43,15 @@ const Resume = (props) => {
     );
   };
 
+  const getTranslatedBulletLabel = (key) => t(`resume.tabs.${key}`);
+
   /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
-    { label: "Education", logoSrc: "education.svg" },
-    { label: "Current Role", logoSrc: "projects.svg" },
-    { label: "Work History", logoSrc: "work-history.svg" },
-    { label: "Programming Skills", logoSrc: "programming-skills.svg" },
-    { label: "Certificates", logoSrc: "interests.svg" },
+    { label: getTranslatedBulletLabel('education'), logoSrc: "education.svg" },
+    { label: getTranslatedBulletLabel('currentRole'), logoSrc: "projects.svg" },
+    { label: getTranslatedBulletLabel('workHistory'), logoSrc: "work-history.svg" },
+    { label: getTranslatedBulletLabel('skills'), logoSrc: "programming-skills.svg" },
+    { label: getTranslatedBulletLabel('certificates'), logoSrc: "interests.svg" },
   ];
 
   const programmingSkillsDetails = [
@@ -65,19 +69,19 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="education">
       <ResumeHeading
         heading={"Universidad Internacional de La Rioja (UNIR)"}
-        subHeading={"Master in Artificial Intelligence"}
+        subHeading={t('resume.education.unir')}
         fromDate={"2024"}
         toDate={"2025"}
       />
       <ResumeHeading
         heading={"Escuela de Organización Industrial (EOI)"}
-        subHeading={"Master Degree in Big Data and Business Intelligence"}
+        subHeading={t('resume.education.eoi')}
         fromDate={"2017"}
         toDate={"2018"}
       />
       <ResumeHeading
         heading={"University of Vigo (UVIGO)"}
-        subHeading={"Master's Degree in Telecommunications Engineering"}
+        subHeading={t('resume.education.uvigo')}
         fromDate={"2004"}
         toDate={"2013"}
       />
@@ -95,19 +99,19 @@ const Resume = (props) => {
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            <span>&#8226;</span> Designed and implemented data pipelines in <b>Azure Databricks</b> and <b>Azure Data Factory</b>, following the Medallion architecture on <b>Delta Lake</b>.
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.reale.b1')}} ></span>
           </span>
           <br />
           <span className="resume-description-text">
-            <span>&#8226;</span> Developed ingestion and transformation processes using <b>PySpark and SQL</b>, integrating data governance via Unity Catalog.
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.reale.b2')}} ></span>
           </span>
           <br />
           <span className="resume-description-text">
-            <span>&#8226;</span> Integrated data from Oracle, Microsoft Dataverse, and REST APIs (Medallia, Genesys Cloud), including web scraping with Python Selenium.
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.reale.b3')}} ></span>
           </span>
           <br />
           <span className="resume-description-text">
-            <span>&#8226;</span> CI/CD environment management with <b>Azure DevOps</b> for code deployment and version control.
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.reale.b4')}} ></span>
           </span>
         </div>
       </div>
@@ -123,11 +127,11 @@ const Resume = (props) => {
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            <span>&#8226;</span> Administered an on-premise Big Data cluster (Hortonworks), managing massive network data storage.
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.voda1.b1')}} ></span>
             <br />
-            <span>&#8226;</span> Implemented data pipelines in <b>Apache NiFi</b> and processed data with <b>PySpark/Pandas</b> to generate automated reports and incident tickets.
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.voda1.b2')}} ></span>
             <br />
-            <span>&#8226;</span> Supervised the <b>Power BI</b> portal for network monitoring and SLA compliance.
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.voda1.b3')}} ></span>
           </span>
         </div>
 
@@ -139,9 +143,9 @@ const Resume = (props) => {
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            <span>&#8226;</span> Automated Service Level Agreements (SLAs) and Key Performance Indicators (KPIs) through VBA and SQL.
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.voda2.b1')}} ></span>
             <br />
-            <span>&#8226;</span> Monitored and analyzed network operations and supplier contracts (Orange, Cellnex, Huawei).
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.voda2.b2')}} ></span>
           </span>
         </div>
 
@@ -153,7 +157,7 @@ const Resume = (props) => {
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            <span>&#8226;</span> Managed equipment deployment across Vodafone Network Centers and resolved mobile network incidents.
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.experis.b1')}} ></span>
           </span>
         </div>
       </div>
@@ -185,8 +189,8 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="certificates">
       <div className="experience-description">
         <span className="resume-description-text">
-        Take a look at my certified courses at:&nbsp;
-          <a href="https://www.linkedin.com/in/jorgegarciaotero/details/certifications/">the following link</a>. 
+        {t('resume.certificates.text')}&nbsp;
+          <a href="https://www.linkedin.com/in/jorgegarciaotero/details/certifications/">{t('resume.certificates.linkText')}</a>. 
         </span>
       </div>
       <ResumeHeading
@@ -199,7 +203,7 @@ const Resume = (props) => {
       />
       <ResumeHeading
         heading="Cisco CCNA"
-        description="Expired certificate"
+        description={t('resume.certificates.expired')}
       />
     </div>,
   ];
@@ -248,7 +252,7 @@ const Resume = (props) => {
       id={props.id || ""}
     >
       <div className="resume-content">
-        <ScreenHeading title={"Resume"} subHeading={"My formal Bio Details"} />
+        <ScreenHeading title={t('resume.title')} subHeading={t('resume.subHeading')} />
         <div className="resume-card">
           <div className="resume-bullets">
             <div className="bullet-container">

@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
@@ -23,6 +24,8 @@ import pb4 from "../../assets/Projects/powerbi4.jpg";
 
 
 export default function Project(props) {
+  const { t } = useTranslation();
+  
   console.log("PROPS ID",props.id)
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
@@ -40,8 +43,8 @@ export default function Project(props) {
   return (
     <div>
       <ScreenHeading
-        title={"Projects"}
-        subHeading={"Latest Projects"}
+        title={t('projects.title')}
+        subHeading={t('projects.subHeading')}
       />
       <section className="project-section fade-in" id={props.id || ""}>
         <div className="container">
@@ -55,8 +58,7 @@ export default function Project(props) {
                   <h5>Fotodered</h5>
                   <h6>Flask / Javascript / SQL</h6>
                   <p>
-                    Website developed using Flask, Datatables, Leaflet and ChartJs
-                    to track Mobile and Fixed Network Alarms of Vodafone Spain Network Area.
+                    {t('projects.fotodered.desc')}
                   </p>
                 </div>
               </div>
@@ -69,8 +71,7 @@ export default function Project(props) {
                   <h5>Vision</h5>
                   <h6>Flask / Javascript / SQL</h6>
                   <p>
-                    Website developed using Flask, Datatables, Leaflet and ChartJs
-                    to track all Network Incidents of Vodafone Spain Network Area.
+                    {t('projects.vision.desc')}
                   </p>
                 </div>
               </div>
@@ -80,10 +81,10 @@ export default function Project(props) {
                   <ImageCarousel images={[pb1, pb2, pb3, pb4]} />
                 </div>
                 <div className="project-info">
-                  <h5>Network Operation KPIs</h5>
+                  <h5>{t('projects.kpis.title')}</h5>
                   <h6>Microsoft Power BI / SQL / Python</h6>
                   <p>
-                    Administration of the Network Operation Sharepoint, which contains over a score of Fully automated Power BI Executive dashboards that tracks Vodafone NetOps main KPIs.
+                    {t('projects.kpis.desc')}
                   </p>
                 </div>
               </div>

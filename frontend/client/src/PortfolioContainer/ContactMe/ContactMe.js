@@ -1,13 +1,14 @@
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
+import { useTranslation } from "react-i18next";
 import Footer from "../../PortfolioContainer/Home/Footer/Footer";
 import "./ContactMe.css";
 
 export default function ContactMe(props) {
-
+  const { t } = useTranslation();
 
   return (
     <div className="main-container fade-in" id={props.id || ""}>
-      <ScreenHeading subHeading={"Lets Keep In Touch"} title={"Contact Me"} />
+      <ScreenHeading subHeading={t('contactMe.subHeading')} title={t('contactMe.title')} />
       <div className="central-form">
         <div className="col">
           <h2 className="title">
