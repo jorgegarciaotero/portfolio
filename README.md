@@ -1,7 +1,7 @@
 # Jorge García Otero's Portfolio
 
 This project is a personal portfolio created using React for the frontend and Node.js for the backend. It showcases information about my education, skills, work experience, and projects.
-https://jorgegotero.appspot.com/
+https://jorgegarciaotero.github.io/portfolio/
 
 ## Features
 
