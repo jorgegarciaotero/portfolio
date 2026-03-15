@@ -1,0 +1,9 @@
+.git
+.gitignore
+
+# Ignorar node_modules para que GCP los instale limpios en la nube
+node_modules/
+backend/node_modules/
+frontend/client/node_modules/
+
+# Ojo: No ignoramos frontend/client/build/ porque el backend lo necesita para servir la web

@@ -1,0 +1,9 @@
+runtime: nodejs20
+
+env_variables:
+  NODE_ENV: "production"
+
+# Para asegurarnos de que la instancia se comporta bien cuando no hay trafico continuado
+instance_class: F1
+automatic_scaling:
+  max_instances: 1

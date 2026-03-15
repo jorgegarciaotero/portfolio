@@ -62,7 +62,7 @@ export default function Profile() {
                         <a href="mailto:jorgegarciaotero@gmail.com">
                             <button className="btn primary-btn">Contact Me</button>
                         </a>
-                        <a href="resume_jorgegarciaotero.pdf" download="resume_jorgegarciaotero.pdf">
+                        <a href="cv_jorgegarciaotero.pdf" download="cv_jorgegarciaotero.pdf">
                             <button className="btn highlighted-btn">Get Resume</button>
                         </a>
                     </div>
