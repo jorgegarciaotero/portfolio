@@ -1,18 +1,7 @@
-# Jorge García Otero - Data Engineer Portfolio
+# Jorge García Otero's Portfolio
 
-Welcome to the source code of my personal portfolio. This website is a showcase of my professional journey, skills, and projects as a Data Engineer.
-
-**Live Website:** [https://jorgegarciaotero.github.io/portfolio](https://jorgegarciaotero.github.io/portfolio)
-
-## About Me
-
-I am a Telecommunications Engineer & Master in AI, specialized in Data Engineering. I automate data processes from ingestion to visualization. 
-
-My core tech stack includes:
-- **Languages:** Python, SQL, PySpark, JavaScript
-- **Cloud & Big Data:** Azure, Databricks, Data Factory, Delta Lake, Hive
-- **BI & Visualization:** Power BI, Superset
-- **Automation & CI/CD:** Power Automate, Selenium, Azure DevOps
+This project is a personal portfolio created using React for the frontend and Node.js for the backend. It showcases information about my education, skills, work experience, and projects.
+https://jorgegotero.appspot.com/
 
 ## Features
 
