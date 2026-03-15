@@ -54,11 +54,11 @@ const Resume = (props) => {
     { skill: "Python (PySpark, Pandas, Flask)", ratingPercentage: 85 },
     { skill: "SQL & Databases (MySQL, Hive, Delta Lake)", ratingPercentage: 85 },
     { skill: "Azure (Databricks, Data Factory, DevOps)", ratingPercentage: 80 },
-    { skill: "Power BI & Superset", ratingPercentage: 85 },
-    { skill: "Apache NiFi & Airflow", ratingPercentage: 70 },
+    { skill: "Power BI", ratingPercentage: 85 },
     { skill: "JavaScript, HTML, CSS", ratingPercentage: 75 },
+    { skill: "Apache NiFi & Airflow", ratingPercentage: 55 },
     { skill: "Google Cloud Platform", ratingPercentage: 65 },
-    { skill: "Power Automate & Selenium", ratingPercentage: 75 },
+    { skill: "Power Automate & Selenium", ratingPercentage: 55 },
   ];
 
   const resumeDetails = [
