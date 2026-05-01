@@ -83,7 +83,7 @@ const Resume = (props) => {
         heading={"University of Vigo (UVIGO)"}
         subHeading={t('resume.education.uvigo')}
         fromDate={"2004"}
-        toDate={"2013"}
+        toDate={"2012"}
       />
     </div>,
 
