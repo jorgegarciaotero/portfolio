@@ -66,8 +66,8 @@ const resources = {
             "b3": "Supervised the <b>Power BI</b> portal for network monitoring and SLA compliance."
           },
           "voda2": {
-            "b1": "Automated Service Level Agreements (SLAs) and Key Performance Indicators (KPIs) through VBA and SQL.",
-            "b2": "Monitored and analyzed network operations and supplier contracts (Orange, Cellnex, Huawei)."
+            "b1": "Automated Service Level Agreements (SLAs) and Key Performance Indicators (KPIs) through VBA, SQL and Power BI.",
+            "b2": "Monitored and analyzed network operations and supplier contracts (Orange, Cellnex, Huawei, Telefónica)."
           },
           "experis": {
             "b1": "Managed equipment deployment across Vodafone Network Centers and resolved mobile network incidents."
@@ -173,8 +173,8 @@ const resources = {
             "b3": "Supervisión del portal corporativo en <b>Power BI</b> para monitorización de red y cumplimiento de SLAs."
           },
           "voda2": {
-            "b1": "Automatización del cálculo de Acuerdos de Nivel de Servicio (SLAs) e Indicadores de Rendimiento (KPIs) mediante VBA y SQL.",
-            "b2": "Monitorización y análisis de operaciones de red y contratos de proveedores (Orange, Cellnex, Huawei)."
+            "b1": "Automatización del cálculo de Acuerdos de Nivel de Servicio (SLAs) e Indicadores de Rendimiento (KPIs) mediante VBA, SQL y Power BI.",
+            "b2": "Monitorización y análisis de operaciones de red y contratos de proveedores (Orange, Cellnex, Huawei, Telefónica)."
           },
           "experis": {
             "b1": "Gestión de despliegue de equipamiento en Centros de Red Vodafone y resolución de incidencias en red móvil."
