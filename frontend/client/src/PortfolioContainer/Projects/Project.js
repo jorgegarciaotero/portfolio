@@ -24,7 +24,6 @@ import pb4 from "../../assets/Projects/powerbi4.jpg";
 
 import bolsa1 from "../../assets/Projects/bolsa1.png";
 import bolsa2 from "../../assets/Projects/bolsa2.png";
-import bolsa3 from "../../assets/Projects/bolsa3.png";
 
 import finanzas1 from "../../assets/Projects/finanzas1.png";
 import finanzas2 from "../../assets/Projects/finanzas2.png";
@@ -105,7 +104,7 @@ export default function Project(props) {
               <div className="personal-grid">
                 <div className="project-card">
                   <div className="project-carousel">
-                    <ImageCarousel images={[bolsa1, bolsa2, bolsa3]} />
+                    <ImageCarousel images={[bolsa1, bolsa2]} />
                   </div>
                   <div className="project-info">
                     <h5>{t('projects.stock.title')}</h5>
