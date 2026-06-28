@@ -98,6 +98,10 @@ const resources = {
         "stock": {
           "title": "Stock Market Analyzer",
           "desc": "Personal project to analyze and track stock market trends, import financial data, calculate technical indicators, and visualize key metrics in a custom dashboard."
+        },
+        "finance": {
+          "title": "Personal Finance Tracker",
+          "desc": "Personal finance management application to record income and expenses, categorize transactions, set budget goals, and visualize monthly financial statistics with interactive charts."
         }
       },
       "contactMe": {
@@ -211,6 +215,10 @@ const resources = {
         "stock": {
           "title": "Analizador de Bolsa",
           "desc": "Proyecto personal para analizar y realizar el seguimiento de tendencias bursátiles, importar datos financieros, calcular indicadores técnicos y visualizar métricas clave en un panel personalizado."
+        },
+        "finance": {
+          "title": "Gestor de Finanzas Personales",
+          "desc": "Aplicación de gestión de finanzas personales para registrar ingresos y gastos, categorizar transacciones, establecer presupuestos y visualizar estadísticas financieras mensuales con gráficos interactivos."
         }
       },
       "contactMe": {

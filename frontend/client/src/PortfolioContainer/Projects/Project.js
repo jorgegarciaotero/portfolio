@@ -26,6 +26,10 @@ import bolsa1 from "../../assets/Projects/bolsa1.png";
 import bolsa2 from "../../assets/Projects/bolsa2.png";
 import bolsa3 from "../../assets/Projects/bolsa3.png";
 
+import finanzas1 from "../../assets/Projects/finanzas1.png";
+import finanzas2 from "../../assets/Projects/finanzas2.png";
+import finanzas3 from "../../assets/Projects/finanzas3.png";
+
 
 export default function Project(props) {
   const { t } = useTranslation();
@@ -99,7 +103,7 @@ export default function Project(props) {
             <div className="personal-projects-section">
               <h4 className="personal-projects-heading">{t('projects.personalTitle')}</h4>
               <div className="personal-grid">
-                <div className="project-card centered-card">
+                <div className="project-card">
                   <div className="project-carousel">
                     <ImageCarousel images={[bolsa1, bolsa2, bolsa3]} />
                   </div>
@@ -107,6 +111,17 @@ export default function Project(props) {
                     <h5>{t('projects.stock.title')}</h5>
                     <h6>Python / Pandas / Streamlit</h6>
                     <p>{t('projects.stock.desc')}</p>
+                  </div>
+                </div>
+
+                <div className="project-card">
+                  <div className="project-carousel">
+                    <ImageCarousel images={[finanzas1, finanzas2, finanzas3]} />
+                  </div>
+                  <div className="project-info">
+                    <h5>{t('projects.finance.title')}</h5>
+                    <h6>Python / Pandas / Streamlit</h6>
+                    <p>{t('projects.finance.desc')}</p>
                   </div>
                 </div>
               </div>
