@@ -22,6 +22,10 @@ import pb2 from "../../assets/Projects/powerbi2.jpg";
 import pb3 from "../../assets/Projects/powerbi3.jpg";
 import pb4 from "../../assets/Projects/powerbi4.jpg";
 
+import bolsa1 from "../../assets/Projects/bolsa1.png";
+import bolsa2 from "../../assets/Projects/bolsa2.png";
+import bolsa3 from "../../assets/Projects/bolsa3.png";
+
 
 export default function Project(props) {
   const { t } = useTranslation();
@@ -49,6 +53,7 @@ export default function Project(props) {
       <section className="project-section fade-in" id={props.id || ""}>
         <div className="container">
           <div className="row">
+            <h4 className="personal-projects-heading work-projects-heading">{t('projects.workTitle')}</h4>
             <div className="projects-grid">
               <div className="project-card">
                 <div className="project-carousel">
@@ -86,6 +91,23 @@ export default function Project(props) {
                   <p>
                     {t('projects.kpis.desc')}
                   </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Personal Projects Section */}
+            <div className="personal-projects-section">
+              <h4 className="personal-projects-heading">{t('projects.personalTitle')}</h4>
+              <div className="personal-grid">
+                <div className="project-card centered-card">
+                  <div className="project-carousel">
+                    <ImageCarousel images={[bolsa1, bolsa2, bolsa3]} />
+                  </div>
+                  <div className="project-info">
+                    <h5>{t('projects.stock.title')}</h5>
+                    <h6>Python / Pandas / Streamlit</h6>
+                    <p>{t('projects.stock.desc')}</p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -81,7 +81,9 @@ const resources = {
       },
       "projects": {
         "title": "Projects",
-        "subHeading": "Latest Projects",
+        "subHeading": "Work & Personal Projects",
+        "workTitle": "Professional Projects",
+        "personalTitle": "Personal Projects",
         "viewProject": "View Project",
         "fotodered": {
           "desc": "Website developed using Flask, Datatables, Leaflet and ChartJs to track Mobile and Fixed Network Alarms of Vodafone Spain Network Area."
@@ -92,6 +94,10 @@ const resources = {
         "kpis": {
           "title": "Network Operation KPIs",
           "desc": "Administration of the Network Operation Sharepoint, which contains over a score of Fully automated Power BI Executive dashboards that tracks Vodafone NetOps main KPIs."
+        },
+        "stock": {
+          "title": "Stock Market Analyzer",
+          "desc": "Personal project to analyze and track stock market trends, import financial data, calculate technical indicators, and visualize key metrics in a custom dashboard."
         }
       },
       "contactMe": {
@@ -188,7 +194,9 @@ const resources = {
       },
       "projects": {
         "title": "Proyectos",
-        "subHeading": "Últimos Proyectos",
+        "subHeading": "Proyectos Profesionales y Personales",
+        "workTitle": "Proyectos Profesionales",
+        "personalTitle": "Proyectos Personales",
         "viewProject": "Ver Proyecto",
         "fotodered": {
           "desc": "Sitio web desarrollado con Flask, Datatables, Leaflet y ChartJs para rastrear las Alarmas de Red Fija y Móvil del Área de Red de Vodafone España."
@@ -199,6 +207,10 @@ const resources = {
         "kpis": {
           "title": "KPIs de Operaciones de Red",
           "desc": "Administración del portal Sharepoint de Operaciones de Red, que contiene más de 20 dashboards ejecutivos totalmente automatizados en Power BI que monitorizan los principales KPIs."
+        },
+        "stock": {
+          "title": "Analizador de Bolsa",
+          "desc": "Proyecto personal para analizar y realizar el seguimiento de tendencias bursátiles, importar datos financieros, calcular indicadores técnicos y visualizar métricas clave en un panel personalizado."
         }
       },
       "contactMe": {

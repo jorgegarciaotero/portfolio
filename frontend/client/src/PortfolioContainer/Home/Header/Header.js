@@ -56,10 +56,14 @@ export default function Header() {
 
 
   const switchScreen = (index, screen) => {
-    let screenComponent = document.getElementById(screen.screen_name);
-    if (!screenComponent) return;
-
-    screenComponent.scrollIntoView({ behavior: "smooth" });
+    if (screen.screen_name === "Home") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      let screenComponent = document.getElementById(screen.screen_name);
+      if (screenComponent) {
+        screenComponent.scrollIntoView({ behavior: "smooth" });
+      }
+    }
     setSelectedScreen(index);
     setShowHeaderOptions(false);
   };

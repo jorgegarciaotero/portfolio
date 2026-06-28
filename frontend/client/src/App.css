@@ -57,3 +57,67 @@
   --toast-success: #10b981;
   --loader-color: var(--accent-primary);
 }
+
+/* Scroll Progress Bar */
+.scroll-progress-bar {
+  position: fixed;
+  top: 100px; /* Under the 100px sticky header */
+  left: 0;
+  height: 4px;
+  background: var(--accent-primary);
+  z-index: 1001; /* Above header */
+  transition: width 0.1s ease-out;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 48px;
+  height: 48px;
+  background-color: var(--accent-primary);
+  color: var(--sage-dark);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all var(--transition-normal);
+  animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.scroll-to-top i {
+  font-size: 18px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.scroll-to-top:hover {
+  background-color: var(--sage-dark);
+  color: var(--white-pure);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-to-top:hover i {
+  transform: translateY(-2px);
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media screen and (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+  }
+  .scroll-to-top i {
+    font-size: 16px;
+  }
+}

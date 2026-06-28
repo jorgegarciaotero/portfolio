@@ -2,36 +2,44 @@
    DESIGN TOKENS (Premium Dark Mode)
    ========================================= */
 :root {
-  /* Core Colors */
-  --bg-primary: #0f172a; /* Deep slate */
-  --bg-secondary: #1e293b;
-  --bg-tertiary: #334155;
+  /* Core Colors (Warm Cream & Slate-Green Theme) */
+  --bg-primary: #f2ede2;     /* Warm Cream/Beige base */
+  --bg-secondary: #213032;   /* Deep Slate-Green (dark version of #647B7D) */
+  --bg-tertiary: #e3dbce;    /* Soft beige-gray border */
   
-  /* Text Colors */
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-accent: #38bdf8; /* Vibrant light blue */
+  /* Text Colors (High Contrast) */
+  --text-primary: #213032;   /* Deep slate-green for light theme */
+  --text-secondary: #596769; /* Muted slate-gray text */
+  --text-accent: #647B7D;    /* User slate blue-green (#647B7D) headings */
+  --text-light: #F2E9D8;     /* Soft warm white for dark backgrounds */
   
-  /* Accent Colors (Neon/Vibrant) */
-  --accent-primary: #0ea5e9;
-  --accent-secondary: #8b5cf6; /* Purple */
-  --accent-gradient: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
-  --accent-glow: 0 0 20px rgba(14, 165, 233, 0.4);
+  /* Accent Colors (Camel/Khaki Brown & Slate Green) */
+  --accent-primary: #C7B89C;   /* User camel/khaki brown (#C7B89C) */
+  --accent-secondary: #647B7D; /* User slate green-blue */
+  --camel-light: #e5dac6;      /* Soft Light Camel */
+  --accent-gradient: linear-gradient(135deg, var(--accent-primary) 0%, var(--camel-light) 100%);
+  --accent-glow: 0 4px 15px rgba(199, 184, 156, 0.25);
   
   /* UI Elements */
-  --border-color: rgba(255, 255, 255, 0.1);
+  --border-color: #e3dbce;
   --error-message: #ef4444;
 
-  /* Glassmorphism */
-  --glass-bg: rgba(30, 41, 59, 0.6);
+  /* Glassmorphism (slate green tinted overlay) */
+  --glass-bg: rgba(33, 48, 50, 0.7);
   --glass-border: 1px solid rgba(255, 255, 255, 0.08);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
   --glass-blur: blur(12px);
 
   /* Transitions */
   --transition-fast: 0.2s ease-in-out;
   --transition-normal: 0.3s ease-in-out;
   --transition-slow: 0.5s ease-in-out;
+
+  /* Custom design variables for the redesign */
+  --sage-dark: #213032; /* Deep slate-green card background */
+  --sage-medium: #C7B89C; /* Soft creamy camel brown */
+  --sand-light: #f7f5f0; /* Lightest warm cream */
+  --white-pure: #ffffff;
 }
 
 /* =========================================
@@ -167,27 +175,26 @@ code {
 }
 
 .primary-btn {
-  color: var(--text-primary);
+  color: var(--sage-dark);
   background: transparent;
-  border: 2px solid var(--accent-primary);
+  border: 1px solid var(--sage-dark);
 }
 
 .primary-btn:hover {
-  background: var(--accent-primary);
-  box-shadow: var(--accent-glow);
-  color: var(--bg-primary);
+  background: var(--sage-dark);
+  color: var(--white-pure);
 }
 
 .highlighted-btn {
-  color: #fff;
-  background: var(--accent-gradient);
-  border: none;
-  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+  color: var(--sage-dark);
+  background: var(--sage-medium);
+  border: 1px solid var(--sage-dark);
+  box-shadow: 0 4px 15px rgba(238, 222, 196, 0.2);
 }
 
 .highlighted-btn:hover {
-  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.6);
-  transform: translateY(-2px);
+  background: var(--sage-dark);
+  color: var(--white-pure);
 }
 
 @media only screen and (max-width: 568px) {

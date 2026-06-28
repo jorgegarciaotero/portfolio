@@ -13,11 +13,9 @@
   height: 540px;
   width: 1000px;
   max-width: 100%;
-  background: var(--glass-bg);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  border: var(--glass-border);
-  box-shadow: var(--glass-shadow);
+  background: var(--accent-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -25,8 +23,8 @@
 .resume-bullets {
   height: 100%;
   width: 320px;
-  background-color: rgba(15, 23, 42, 0.4); /* Darker glass for sidebar */
-  border-right: var(--glass-border);
+  background-color: #52686a;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
   position: relative;
   z-index: 10;
 }
@@ -80,11 +78,14 @@
   border-radius: 22px;
   width: 30px;
   transition: all var(--transition-normal);
-  color: var(--text-secondary);
+  color: var(--text-light);
+  opacity: 0.8;
 }
 
 .bullet:hover {
-  color: var(--text-primary);
+  color: var(--white-pure);
+  background: rgba(255, 255, 255, 0.05);
+  opacity: 1;
 }
 
 .bullet-label {
@@ -97,30 +98,28 @@
 .bullet-logo {
   height: 18px;
   margin: 0 20px 0 0;
-  filter: brightness(0.7);
+  filter: brightness(0) invert(1) sepia(21%) saturate(541%) hue-rotate(10deg) brightness(100%);
   transition: filter var(--transition-fast);
 }
 
-.bullet:hover .bullet-logo,
+.bullet:hover .bullet-logo {
+  filter: brightness(1) invert(0);
+}
+
 .selected-bullet .bullet-logo {
-  filter: brightness(1);
+  filter: brightness(0.15) !important;
 }
 
 .bullet-icons {
-  width: 4px;
-  height: 100%;
-  z-index: 1;
-  background: var(--glass-border);
-  position: absolute;
-  left: 30px;
-  border-radius: 2px;
+  display: none;
 }
 
 .selected-bullet {
-  color: var(--text-primary);
+  color: var(--sage-dark) !important;
   width: 100%;
-  background: var(--accent-gradient);
-  box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+  background: var(--accent-primary) !important;
+  box-shadow: var(--accent-glow);
+  opacity: 1;
 }
 
 .resume-screen-container {
@@ -161,7 +160,7 @@
 }
 
 .resume-main-heading span {
-  color: var(--text-primary);
+  color: var(--text-light);
   font-size: 16px;
   font-family: "Poppins SemiBold", sans-serif;
 }
@@ -170,7 +169,8 @@
   max-width: 100%;
   margin: 5px 0 15px 0;
   text-align: justify;
-  color: var(--text-secondary);
+  color: var(--text-light);
+  opacity: 0.85;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -182,7 +182,7 @@
   width: 16px;
   top: 4px;
   border-radius: 50%;
-  background: var(--accent-gradient);
+  background: var(--accent-primary);
   box-shadow: var(--accent-glow);
 }
 
@@ -196,19 +196,19 @@
 .resume-heading-description {
   font-size: 14px;
   text-align: justify;
-  color: var(--text-secondary);
+  color: var(--text-light);
+  opacity: 0.85;
   line-height: 1.6;
   overflow-wrap: break-word;
   word-break: break-word;
 }
 
 .heading-date {
-  background: rgba(14, 165, 233, 0.1);
-  border: 1px solid var(--accent-primary);
+  background: #52686a;
   padding: 6px 14px;
   font-size: 12px;
   border-radius: 20px;
-  color: var(--accent-primary);
+  color: var(--text-light);
   font-family: "Poppins SemiBold", sans-serif;
   white-space: nowrap;
 }
@@ -244,15 +244,14 @@
   height: 100%;
   transition: width 1.2s ease-out;
   position: absolute;
-  background: var(--accent-gradient);
+  background: var(--accent-primary);
   border-radius: 4px;
-  box-shadow: var(--accent-glow);
 }
 
 .skill-parent span {
   font-family: "Poppins SemiBold", sans-serif;
   font-size: 13px;
-  color: var(--text-primary);
+  color: var(--text-light);
 }
 
 /* IPAD PRO RESPONSIVENESS */

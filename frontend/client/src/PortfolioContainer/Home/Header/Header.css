@@ -7,11 +7,9 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: var(--glass-bg);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  border-bottom: var(--glass-border);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(240, 235, 216, 0.85); /* Cream glass */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .header-parent {
@@ -50,7 +48,7 @@
 }
 
 .header-option:hover {
-  color: var(--accent-primary);
+  color: var(--sage-dark);
 }
 
 .header-option::after {
@@ -79,7 +77,7 @@
 }
 
 .selected-header-option {
-  color: var(--text-primary);
+  color: var(--sage-dark);
 }
 
 /* RESPONSIVENESS */
@@ -104,7 +102,7 @@
     width: 100%;
     justify-content: center;
     gap: 40px;
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(240, 235, 216, 0.98);
     backdrop-filter: blur(10px);
     z-index: 1000;
     opacity: 0;
