@@ -109,7 +109,7 @@ export default function Project(props) {
                   </div>
                   <div className="project-info">
                     <h5>{t('projects.stock.title')}</h5>
-                    <h6>Python / Pandas / Streamlit</h6>
+                    <h6>Python / BigQuery / Cloud Run</h6>
                     <p>{t('projects.stock.desc')}</p>
                   </div>
                 </div>
@@ -120,7 +120,7 @@ export default function Project(props) {
                   </div>
                   <div className="project-info">
                     <h5>{t('projects.finance.title')}</h5>
-                    <h6>Python / Pandas / Streamlit</h6>
+                    <h6>Python / BigQuery / Cloud Run</h6>
                     <p>{t('projects.finance.desc')}</p>
                   </div>
                 </div>
