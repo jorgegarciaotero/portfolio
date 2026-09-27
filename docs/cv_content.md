@@ -1,54 +1,59 @@
-JORGE GARCÕA OTERO	
+JORGE GARC√çA OTERO	
 DATA ENGINEER
 Madrid, 28020
 +34 617873790
 jorgegarciaotero@gmail.com
 https://www.linkedin.com/in/jorgegarciaotero/
 PERFIL PROFESIONAL
-Ingeniero Superior de Telecomunicaciones con m·ster en Big Data y Business Intelligence y m·ster en Inteligencia Artificial. M·s de 10 aÒos de experiencia en el ·mbito de los datos y telecomunicaciones. IniciÈ mi carrera en proyectos de operaciÛn y despliegue de redes, evolucionando hacia la gestiÛn contratos, control de KPIs y automatizaciÛn de reportes. En los ˙ltimos aÒos me he consolidado como Data Engineer, construyendo canalizaciones de ingesta y transformaciÛn de datos para su explotaciÛn analÌtica en Power BI y Web.
+Ingeniero Superior de Telecomunicaciones con m√°ster en Big Data y Business Intelligence y m√°ster en Inteligencia Artificial. M√°s de 10 a√±os de experiencia en el √°mbito de los datos y telecomunicaciones. Inici√© mi carrera en proyectos de operaci√≥n y despliegue de redes, evolucionando hacia la gesti√≥n contratos, control de KPIs y automatizaci√≥n de reportes. En los √∫ltimos a√±os me he consolidado como Data Engineer, construyendo canalizaciones de ingesta y transformaci√≥n de datos para su explotaci√≥n anal√≠tica en Power BI y Web.
 EXPERIENCIA
-REALE GROUP, Madrid	10/2024 - actualidad
+TELEF√ìNICA ESPA√ëA, Madrid	2025 - actualidad
+GESTOR POSTVENTA DE CLIENTE
+Dinamizaci√≥n de la gesti√≥n de provisiones y aver√≠as del servicio mayorista de FTTH de Telef√≥nica Espa√±a.
+Realizaci√≥n de automatizaciones de procesos end-to-end: ingesta de datos, transformaci√≥n mediante Python, tratamiento con modelos de OpenAI y visualizaci√≥n en Power BI.
+Gesti√≥n, extracci√≥n y an√°lisis de datos sobre bases de datos relacionales Oracle y SQL Server para la optimizaci√≥n de procesos operativos.
+REALE GROUP, Madrid	10/2024 - 2025
 DATA ENGINEER
-DiseÒo e implementaciÛn de canalizaciones de datos en Azure Databricks y Azure Data Factory, bajo arquitectura Medallion en Delta Lake.
-Desarrollo de procesos de ingesta y transformaciÛn (PySpark, SQL) con validaciones de consistencia y gobernanza de datos en Unity Catalog.
-IntegraciÛn de datos desde Oracle, Microsoft Dataverse y APIs Rest (Medallia, Genesys Cloud), incluyendo procesos de web scraping con Selenium.
-Trabajo en entornos CI/CD con Azure DevOps, gestionando integraciÛn, versionado y despliegue automatizado de cÛdigo.
+Dise√±o e implementaci√≥n de canalizaciones de datos en Azure Databricks y Azure Data Factory, bajo arquitectura Medallion en Delta Lake.
+Desarrollo de procesos de ingesta y transformaci√≥n (PySpark, SQL) con validaciones de consistencia y gobernanza de datos en Unity Catalog.
+Integraci√≥n de datos desde Oracle, Microsoft Dataverse y APIs Rest (Medallia, Genesys Cloud), incluyendo procesos de web scraping con Selenium.
+Trabajo en entornos CI/CD con Azure DevOps, gestionando integraci√≥n, versionado y despliegue automatizado de c√≥digo.
 VODAFONE, Madrid	07/2015 - 09/2024
 DATA ENGINEER	04/2019 - 09/2024 
-AdministraciÛn y operaciÛn de un cl˙ster de Big Data on-premise (Hortonworks) de 30 nodos, gestionando el almacenamiento y procesamiento masivo de datos de red.
-ImplementaciÛn de canalizaciones de datos en Apache NiFi y procesamiento con Pyspark/Pandas, generando informes autom·ticos y tickets de incidencias y trabajos programados.
-IntegraciÛn de datos desde Sharepoint y Outlook con Power Automate, conectando con bases de datos MariaDB.
-Desarrollo de plataformas web internas para la geolocalizaciÛn de alarmas y gestiÛn de incidencias optimizando la priorizaciÛn y resoluciÛn de problemas en la red.
-AdministraciÛn del portal de Power BI para la monitorizaciÛn de red y cumplimiento de SLAs, asegurando la disponibilidad y calidad de los datos.
-CoordinaciÛn con partners externos en la automatizaciÛn de procesos y diseÒo de herramientas web, actuando como referente tÈcnico entre proveedores y equipos de Red e IT.
+Administraci√≥n y operaci√≥n de un cl√∫ster de Big Data on-premise (Hortonworks) de 30 nodos, gestionando el almacenamiento y procesamiento masivo de datos de red.
+Implementaci√≥n de canalizaciones de datos en Apache NiFi y procesamiento con Pyspark/Pandas, generando informes autom√°ticos y tickets de incidencias y trabajos programados.
+Integraci√≥n de datos desde Sharepoint y Outlook con Power Automate, conectando con bases de datos MariaDB.
+Desarrollo de plataformas web internas para la geolocalizaci√≥n de alarmas y gesti√≥n de incidencias optimizando la priorizaci√≥n y resoluci√≥n de problemas en la red.
+Administraci√≥n del portal de Power BI para la monitorizaci√≥n de red y cumplimiento de SLAs, asegurando la disponibilidad y calidad de los datos.
+Coordinaci√≥n con partners externos en la automatizaci√≥n de procesos y dise√±o de herramientas web, actuando como referente t√©cnico entre proveedores y equipos de Red e IT.
 DATA ANALYST	07/2015 - 04/2019
-Seguimiento de KPIs y SLAs del ·rea de OperaciÛn de red y de contratos de proveedores y partners tecnolÛgicos. 
-AutomatizaciÛn y visualizaciÛn de KPIs y SLAs mediante macros en VBA, generaciÛn de reportes Excel y Power Point y envÌo de correos a partir de los datos extraÌdos de Teradata y de MariaDB. 
-Desarrollo de dashboards en Power BI para el seguimiento de SLAs de contratos (Orange, Huawei, TelefÛnica, Cellnex) y monitorizaciÛn de la disponibilidad de la red mÛvil.
-GestiÛn de contratos de OperaciÛn de Red. ActualizaciÛn de acuerdos con Orange (FTTH y mÛvil), Cellnex (cesiÛn de infraestructuras mÛviles) y TelefÛnica (vDSL).
+Seguimiento de KPIs y SLAs del √°rea de Operaci√≥n de red y de contratos de proveedores y partners tecnol√≥gicos. 
+Automatizaci√≥n y visualizaci√≥n de KPIs y SLAs mediante macros en VBA, generaci√≥n de reportes Excel y Power Point y env√≠o de correos a partir de los datos extra√≠dos de Teradata y de MariaDB. 
+Desarrollo de dashboards en Power BI para el seguimiento de SLAs de contratos (Orange, Huawei, Telef√≥nica, Cellnex) y monitorizaci√≥n de la disponibilidad de la red m√≥vil.
+Gesti√≥n de contratos de Operaci√≥n de Red. Actualizaci√≥n de acuerdos con Orange (FTTH y m√≥vil), Cellnex (cesi√≥n de infraestructuras m√≥viles) y Telef√≥nica (vDSL).
 EXPERIS/SATEC, Madrid/Vigo	06/2013 - 07/2015
-T…CNICO DESPLIEGUE Y OPERACI”N DE RED	
-ResoluciÛn de incidencias en la red Vodafone (BTS, DSLAMs).
-PlanificaciÛn y gestiÛn de proyectos de despliegue de equipos, cableado de red y elÈctrico y coordinaciÛn de pruebas de aceptaciÛn en los centros de datos de Vodafone EspaÒa.
-GestiÛn del proyecto de despliegue de OLTs de Sharing con Orange a nivel nacional.
-GestiÛn de numerosos proyectos de despliegue de equipos y cableados, incluyendo la coordinaciÛn integral del despliegue del CDC de GijÛn.
+T√âCNICO DESPLIEGUE Y OPERACI√ìN DE RED	
+Resoluci√≥n de incidencias en la red Vodafone (BTS, DSLAMs).
+Planificaci√≥n y gesti√≥n de proyectos de despliegue de equipos, cableado de red y el√©ctrico y coordinaci√≥n de pruebas de aceptaci√≥n en los centros de datos de Vodafone Espa√±a.
+Gesti√≥n del proyecto de despliegue de OLTs de Sharing con Orange a nivel nacional.
+Gesti√≥n de numerosos proyectos de despliegue de equipos y cableados, incluyendo la coordinaci√≥n integral del despliegue del CDC de Gij√≥n.
 GRADIANT, Vigo	09/2012 - 05/2013
 DESARROLLADOR C++/C# (BECARIO)
-Desarrollo de una aplicaciÛn para controlar la actividad fÌsica de personas mayores mediante la detecciÛn de movimiento en tiempo real utilizando el sensor Microsoft Kinect.
-FORMACI”N ACAD…MICA Y COMPLEMENTARIA						           
-M¡STER EN INTELIGENCIA ARTIFICIAL 	2025
+Desarrollo de una aplicaci√≥n para controlar la actividad f√≠sica de personas mayores mediante la detecci√≥n de movimiento en tiempo real utilizando el sensor Microsoft Kinect.
+FORMACI√ìN ACAD√âMICA Y COMPLEMENTARIA						           
+M√ÅSTER EN INTELIGENCIA ARTIFICIAL 	2025
 Universidad Internacional de la Rioja, Online					
-M¡STER EN BIG DATA Y BUSINESS INGELLIGENCE	2018
-Escuela de OrganizaciÛn Industrial, Madrid
-INGENIERÕA SUPERIOR DE TELECOMUNICACIONES (ELECTR”NICA)	2013
+M√ÅSTER EN BIG DATA Y BUSINESS INGELLIGENCE	2018
+Escuela de Organizaci√≥n Industrial, Madrid
+INGENIER√çA SUPERIOR DE TELECOMUNICACIONES (ELECTR√ìNICA)	2013
 Universidad de Vigo, Vigo
-INFORM¡TICA
-Lenguajes y programaciÛn: Python (PySpark, Pandas, Flask), SQL, VBA, HTML, CSS, JavaScript.
+INFORM√ÅTICA
+Lenguajes y programaci√≥n: Python (PySpark, Pandas, Flask), SQL, VBA, HTML, CSS, JavaScript.
 Data Engineering y Big Data: Delta Lake, Hive, MariaDB, Apache NiFi, Apache Airflow.
-Cloud y orquestaciÛn: Azure (Databricks, Data Factory), Google Cloud Platform, Azure DevOps.
-Versionado y colaboraciÛn: Git, GitHub.
-VisualizaciÛn y reporting: Power BI, Apache Superset.
-AutomatizaciÛn y herramientas O365: Power Automate, Outlook, Sharepoint.
+Cloud y orquestaci√≥n: Azure (Databricks, Data Factory), Google Cloud Platform, Azure DevOps.
+Versionado y colaboraci√≥n: Git, GitHub.
+Visualizaci√≥n y reporting: Power BI, Apache Superset.
+Automatizaci√≥n y herramientas O365: Power Automate, Outlook, Sharepoint.
 IDIOMAS Y CERTIFICACIONES
-IDIOMAS: InglÈs C1, EspaÒol Nativo, Gallego Nativo.
+IDIOMAS: Ingl√©s C1, Espa√±ol Nativo, Gallego Nativo.
 CERTIFICACIONES: Google Cloud Data Engineer (2024), Google Cloud Associate Engineer (2023), Cisco CCNA (2014), Cambridge English, B2 (2014).

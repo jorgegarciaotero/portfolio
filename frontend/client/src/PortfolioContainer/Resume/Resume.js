@@ -55,14 +55,14 @@ const Resume = (props) => {
   ];
 
   const programmingSkillsDetails = [
-    { skill: "Python (PySpark, Pandas, Flask)", ratingPercentage: 85 },
-    { skill: "SQL & Databases (MySQL, Hive, Delta Lake)", ratingPercentage: 85 },
+    { skill: "Python (Pandas, Flask, PySpark)", ratingPercentage: 88 },
+    { skill: "AI Models & OpenAI", ratingPercentage: 85 },
+    { skill: "SQL & Databases (Oracle, SQL Server, MySQL)", ratingPercentage: 88 },
+    { skill: "Power BI & Visualization", ratingPercentage: 88 },
     { skill: "Azure (Databricks, Data Factory, DevOps)", ratingPercentage: 80 },
-    { skill: "Power BI", ratingPercentage: 85 },
     { skill: "JavaScript, HTML, CSS", ratingPercentage: 75 },
-    { skill: "Apache NiFi & Airflow", ratingPercentage: 55 },
+    { skill: "Apache NiFi & Airflow", ratingPercentage: 60 },
     { skill: "Google Cloud Platform", ratingPercentage: 65 },
-    { skill: "Power Automate & Selenium", ratingPercentage: 55 },
   ];
 
   const resumeDetails = [
@@ -87,31 +87,26 @@ const Resume = (props) => {
       />
     </div>,
 
-    /* WORK EXPERIENCE */
-    /* WORK EXPERIENCE */
+    /* WORK EXPERIENCE - CURRENT ROLE */
     <div className="resume-screen-container" key="current-role">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Reale Group"}
-          subHeading={"Data Engineer"}
-          fromDate={"Oct 2024"}
+          heading={"Telefónica España"}
+          subHeading={t('resume.experience.telefonica.title')}
+          fromDate={"2025"}
           toDate={"Present"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.reale.b1')}} ></span>
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.telefonica.b1')}} ></span>
           </span>
           <br />
           <span className="resume-description-text">
-            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.reale.b2')}} ></span>
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.telefonica.b2')}} ></span>
           </span>
           <br />
           <span className="resume-description-text">
-            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.reale.b3')}} ></span>
-          </span>
-          <br />
-          <span className="resume-description-text">
-            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.reale.b4')}} ></span>
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.telefonica.b3')}} ></span>
           </span>
         </div>
       </div>
@@ -119,6 +114,24 @@ const Resume = (props) => {
 
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
+        <ResumeHeading
+          heading={"Reale Group"}
+          subHeading={"Data Engineer"}
+          fromDate={"Oct 2024"}
+          toDate={"2025"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.reale.b1')}} ></span>
+            <br />
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.reale.b2')}} ></span>
+            <br />
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.reale.b3')}} ></span>
+            <br />
+            <span>&#8226;</span> <span dangerouslySetInnerHTML={{__html: t('resume.experience.reale.b4')}} ></span>
+          </span>
+        </div>
+
         <ResumeHeading
           heading={"Vodafone"}
           subHeading={"Data Engineer"}

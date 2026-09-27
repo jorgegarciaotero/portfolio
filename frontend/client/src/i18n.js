@@ -14,28 +14,28 @@ const resources = {
       "profile": {
         "hello": "Hello, I am ",
         "roles": [
-            "Data Engineer",
-            "Python / SQL / PySpark",
-            "Azure / Databricks / Data Factory",
-            "Power BI / Power Automate",
-            "Delta Lake / Hive / MariaDB",
-            "Ingestion, Transformation & AI"
+            "Gestor Postventa de Cliente @ Telefónica",
+            "Data & Process Automation Specialist",
+            "Python / OpenAI Models / Power BI",
+            "Databases: Oracle & SQL Server",
+            "FTTH Wholesale Operations",
+            "Data Engineer"
         ],
-        "tagline": "Telecommunications Engineer with Master's in AI and Master in Big Data & Business Intelligence. Automating your data processes from ingestion to visualization.",
+        "tagline": "Telecommunications Engineer with Master's in AI and Big Data. Customer After-Sales Manager at Telefónica España, automating wholesale FTTH processes from data ingestion to OpenAI models and Power BI.",
         "contactMe": "Contact Me",
         "getResume": "Get Resume"
       },
       "aboutMe": {
         "title": "About Me",
-        "description": "Telecommunications Engineer with Master's degrees in Big Data and Artificial Intelligence. Over 10 years of experience in the data and telecommunications sectors. I began my career in network operations and deployment, evolving towards contract management, KPI control, and report automation. In recent years, I have consolidated my role as a Data Engineer, building data ingestion and transformation pipelines (Medallion architecture) for analytical exploitation in Power BI and web platforms.",
+        "description": "Telecommunications Engineer with Master's degrees in Big Data and Artificial Intelligence. Over 10 years of experience in data and telecommunications. Currently working as Customer After-Sales Manager at Telefónica España, energizing provision and fault management for Telefónica's wholesale FTTH service. Specialized in end-to-end process automation: data ingestion, Python transformation, AI treatment with OpenAI models, and Power BI visualization, querying Oracle and SQL Server databases.",
         "highlightsHeading": "Key highlights:",
         "highlights": [
-          "Data Engineering: Databricks, PySpark, Delta Lake, Apache NiFi, Airflow",
+          "Process Automation & AI: OpenAI Models, Python, Power BI",
+          "Databases: Oracle, SQL Server, MariaDB, Hive, Delta Lake",
+          "Data Engineering: Databricks, PySpark, Apache NiFi, Airflow",
           "Cloud & Orchestration: Azure (Data Factory, DevOps), Google Cloud Platform",
           "Programming: Python (Flask, Pandas), SQL, JavaScript",
-          "Databases: MariaDB, Hive, Oracle, Microsoft Dataverse",
-          "Visualization: Power BI",
-          "Automation: Power Automate, Web Scraping (Selenium)"
+          "Operations Management: Wholesale FTTH provisions & fault handling"
         ]
       },
       "resume": {
@@ -54,6 +54,12 @@ const resources = {
           "uvigo": "Master's Degree in Telecommunications Engineering"
         },
         "experience": {
+          "telefonica": {
+            "title": "Customer After-Sales Manager",
+            "b1": "Streamlining and energizing provision and fault management for Telefónica's wholesale FTTH service.",
+            "b2": "Developing end-to-end process automations: data ingestion, data transformation using <b>Python</b>, AI enrichment with <b>OpenAI models</b>, and interactive dashboards in <b>Power BI</b>.",
+            "b3": "Managing and querying relational databases including <b>Oracle</b> and <b>SQL Server</b> for operational efficiency."
+          },
           "reale": {
             "b1": "Designed and implemented data pipelines in <b>Azure Databricks</b> and <b>Azure Data Factory</b>, following the Medallion architecture on <b>Delta Lake</b>.",
             "b2": "Developed ingestion and transformation processes using <b>PySpark and SQL</b>, integrating data governance via Unity Catalog.",
@@ -131,28 +137,28 @@ const resources = {
       "profile": {
         "hello": "Hola, soy ",
         "roles": [
-            "Data Engineer",
-            "Python / SQL / PySpark",
-            "Azure / Databricks / Data Factory",
-            "Power BI / Power Automate",
-            "Delta Lake / Hive / MariaDB",
-            "Ingeniería de Datos e IA"
+            "Gestor Postventa de Cliente @ Telefónica",
+            "Especialista en Automatización e IA",
+            "Python / Modelos OpenAI / Power BI",
+            "Bases de Datos: Oracle y SQL Server",
+            "Gestión FTTH Mayorista",
+            "Ingeniero de Datos"
         ],
-        "tagline": "Ingeniero de Telecomunicaciones con Máster en IA y Máster en Big Data & Business Intelligence. Automatizando procesos de datos desde la ingesta hasta la visualización.",
+        "tagline": "Ingeniero de Telecomunicaciones con Máster en IA y Big Data. Gestor Postventa de Cliente en Telefónica España, automatizando procesos FTTH mayorista desde la ingesta hasta modelos OpenAI y Power BI.",
         "contactMe": "Contáctame",
         "getResume": "Descargar CV"
       },
       "aboutMe": {
         "title": "Sobre Mí",
-        "description": "Ingeniero de Telecomunicaciones con Máster en Big Data y en Inteligencia Artificial. Más de 10 años de experiencia en los sectores de datos y telecomunicaciones. Comencé mi carrera en operaciones y despliegue de red, evolucionando hacia la gestión de contratos, control de KPIs y automatización de informes. En los últimos años he consolidado mi rol como Ingeniero de Datos, construyendo pipelines de ingesta y transformación (Arquitectura Medallion) para su explotación analítica en Power BI y plataformas web.",
+        "description": "Ingeniero de Telecomunicaciones con Máster en Big Data y en Inteligencia Artificial. Más de 10 años de experiencia en los sectores de datos y telecomunicaciones. Actualmente me desempeño como Gestor Postventa de Cliente en Telefónica España, dinamizando la gestión de provisiones y averías del servicio mayorista de FTTH. Especializado en automatizaciones de procesos end-to-end: ingesta de datos, transformación mediante Python, tratamiento con modelos de OpenAI y visualización en Power BI sobre bases de datos Oracle y SQL Server.",
         "highlightsHeading": "Puntos destacados:",
         "highlights": [
-          "Data Engineering: Databricks, PySpark, Delta Lake, Apache NiFi, Airflow",
-          "Cloud & Orchestración: Azure (Data Factory, DevOps), Google Cloud Platform",
+          "Automatización e IA: Modelos OpenAI, Python, Power BI",
+          "Bases de Datos: Oracle, SQL Server, MariaDB, Hive, Delta Lake",
+          "Ingeniería de Datos: Databricks, PySpark, Apache NiFi, Airflow",
+          "Cloud y Orquestación: Azure (Data Factory, DevOps), Google Cloud Platform",
           "Programación: Python (Flask, Pandas), SQL, JavaScript",
-          "Bases de Datos: MariaDB, Hive, Oracle, Microsoft Dataverse",
-          "Visualización: Power BI",
-          "Automatización: Power Automate, Web Scraping (Selenium)"
+          "Gestión Operativa: Provisiones y averías del servicio mayorista de FTTH"
         ]
       },
       "resume": {
@@ -171,6 +177,12 @@ const resources = {
           "uvigo": "Máster en Ingeniería de Telecomunicaciones"
         },
         "experience": {
+          "telefonica": {
+            "title": "Gestor Postventa de Cliente",
+            "b1": "Dinamizar la gestión de provisiones y averías del servicio mayorista de FTTH de Telefónica España.",
+            "b2": "Realizar automatizaciones de procesos end-to-end: ingesta de datos, transformación mediante <b>Python</b>, tratamiento con <b>modelos de OpenAI</b> y visualización en <b>Power BI</b>.",
+            "b3": "Gestión, consulta y extracción de datos en bases de datos <b>Oracle</b> y <b>SQL Server</b> para la optimización operativa."
+          },
           "reale": {
             "b1": "Diseño e implementación de pipelines de datos en <b>Azure Databricks</b> y <b>Azure Data Factory</b>, siguiendo la arquitectura Medallion en <b>Delta Lake</b>.",
             "b2": "Desarrollo de procesos de ingesta y transformación usando <b>PySpark y SQL</b>, integrando gobierno del dato vía Unity Catalog.",

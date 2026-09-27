@@ -7,7 +7,12 @@ https://www.linkedin.com/in/jorgegarciaotero/
 PERFIL PROFESIONAL
 Ingeniero Superior de Telecomunicaciones con máster en Big Data y Business Intelligence y máster en Inteligencia Artificial. Más de 10 años de experiencia en el ámbito de los datos y telecomunicaciones. Inicié mi carrera en proyectos de operación y despliegue de redes, evolucionando hacia la gestión contratos, control de KPIs y automatización de reportes. En los últimos años me he consolidado como Data Engineer, construyendo canalizaciones de ingesta y transformación de datos para su explotación analítica en Power BI y Web.
 EXPERIENCIA
-REALE GROUP, Madrid	10/2024 - actualidad
+TELEFÓNICA ESPAÑA, Madrid	2025 - actualidad
+GESTOR POSTVENTA DE CLIENTE
+Dinamización de la gestión de provisiones y averías del servicio mayorista de FTTH de Telefónica España.
+Realización de automatizaciones de procesos end-to-end: ingesta de datos, transformación mediante Python, tratamiento con modelos de OpenAI y visualización en Power BI.
+Gestión, extracción y análisis de datos sobre bases de datos relacionales Oracle y SQL Server para la optimización de procesos operativos.
+REALE GROUP, Madrid	10/2024 - 2025
 DATA ENGINEER
 Diseño e implementación de canalizaciones de datos en Azure Databricks y Azure Data Factory, bajo arquitectura Medallion en Delta Lake.
 Desarrollo de procesos de ingesta y transformación (PySpark, SQL) con validaciones de consistencia y gobernanza de datos en Unity Catalog.
